@@ -8,12 +8,17 @@
   <body>
     <h1 id="title">Professional Service Intake</h1>
     <p id="description">Identify your current bottleneck for a streamline audit.</p>
-    <form id="survey-form">
+    <form 
+      id="survey-form"
+      action="https://formspree.io/f/meerjrvb"
+      method="POST"
+      >
       <fieldset>
         <label 
         id="name-label"
         for="name">Name: 
           <input 
+          name="name"
           id="name" 
           type="text"
           placeholder="First Name, Last Name"
@@ -25,6 +30,7 @@
         id="email-label" 
         for="email">Email Address: 
           <input 
+          name="email"
           id="email"
           type="email"
           placeholder="email@domain.com"
@@ -33,11 +39,12 @@
         </label>
         <div></div>
         <label 
-        id="number-label"
+        id="tel-label"
         for="number">Phone Number: 
           <input
-          id="number"
-          type="number"
+          name="phone"
+          id="tel"
+          type="tel"
           placeholder="e.g.+34 000 000 000"
           min="10"
           max="15"
@@ -46,9 +53,10 @@
         </label>
       </fieldset>
       <fieldset>
-        <label for="dropdown 1">What is your primary bottleneck? 
+        <label for="dropdown-problem">What is your primary bottleneck? 
           <select 
-          id="dropdown"
+          id="dropdown-problem"
+          name="dropdown-problem"
           required
           >
             <option disabled selected value="">Select the issue...</option>
@@ -59,8 +67,11 @@
           </select>
         </label>
         <div></div>
-        <label id="dropdown-label">Business Size
-          <select id="dropdown" required>
+        <label id="dropdown-label" for="dropdown-size">Business Size
+          <select 
+            id="dropdown-size" 
+            name="dropdown-size" 
+            required>
             <option disabled selected value="">Select size...</option>
             <option value="solo">Solo / Freelancer</option>
             <option value="small">Small (1-10 staff)</option>
@@ -69,35 +80,34 @@
           </select>
         </label>
         <div></div>
-        <label for="dropdown 2">
       </fieldset>
       <fieldset>
         <label>Current Tools (Select all that apply):
           <label>
             <input 
             name="tools"
-            type="radio" 
+            type="checkbox" 
             value="excel"
             > Spreadsheets / Excel
           </label>
           <label>
             <input 
             name="tools"
-            type="radio" 
+            type="checkbox" 
             value="paper"
             > Paper / Physical Files
           </label>
           <label>
             <input 
             name="tools"
-            type="radio" 
+            type="checkbox" 
             value="email"
             > Email / Messaging
           </label>
           <label>
             <input 
             name="tools"
-            type="radio" 
+            type="checkbox" 
             value="social"> Social Media Apps
           </label>
         </label>
@@ -105,13 +115,23 @@
       <fieldset>
         <p>Project Urgency Status:</p>
         <label>
-          <input name="urgency" type="checkbox" value="asap" checked> ASAP (Critical Bottleneck)
+          <input 
+            name="urgency" 
+            type="checkbox" 
+            value="asap" 
+            checked> ASAP (Critical Bottleneck)
         </label>
         <label>
-          <input name="urgency" type="checkbox" value="month"> Within 30 Days (Planned)
+          <input 
+            name="urgency" 
+            type="checkbox" 
+            value="month"> Within 30 Days (Planned)
         </label>
         <label>
-          <input name="urgency" type="checkbox" value="research"> Research Phase (Low Priority)
+          <input 
+            name="urgency" 
+            type="checkbox" 
+            value="research"> Research Phase (Low Priority)
         </label>
       </fieldset>
       <fieldset>
@@ -123,7 +143,7 @@
           </textarea>
         </label>
       </fieldset>
-      <button id="submit">Initialize Audit</submit>
+      <button id="submit">Initialize Audit</button>
     </form>
   </body>
 </html>
