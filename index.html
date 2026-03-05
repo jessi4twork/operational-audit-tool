@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Professional Service Intake</h1>
+    <p id="description">Identify your current bottleneck for a streamline audit.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label 
+        id="name-label"
+        for="name">Name: 
+          <input 
+          id="name" 
+          type="text"
+          placeholder="First Name, Last Name"
+          required
+          />
+        </label>
+        <div></div>
+        <label
+        id="email-label" 
+        for="email">Email Address: 
+          <input 
+          id="email"
+          type="email"
+          placeholder="email@domain.com"
+          required
+          />
+        </label>
+        <div></div>
+        <label 
+        id="number-label"
+        for="number">Phone Number: 
+          <input
+          id="number"
+          type="number"
+          placeholder="e.g.+34 000 000 000"
+          min="10"
+          max="15"
+          required
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown 1">What is your primary bottleneck? 
+          <select 
+          id="dropdown"
+          required
+          >
+            <option disabled selected value="">Select the issue...</option>
+            <option value="mess">Disorganized Processes (Chaos)</option>
+            <option value="time">Too Much Manual Work (Time Waste)</option>
+            <option value="growth">Can't Scale (Growth Blocked)</option>
+            <option value="data">Losing Information (Data Leakage)</option>
+          </select>
+        </label>
+        <div></div>
+        <label id="dropdown-label">Business Size
+          <select id="dropdown" required>
+            <option disabled selected value="">Select size...</option>
+            <option value="solo">Solo / Freelancer</option>
+            <option value="small">Small (1-10 staff)</option>
+            <option value="mid">Growing (11-50 staff)</option>
+            <option value="large">Enterprise (50+ staff)</option>
+          </select>
+        </label>
+        <div></div>
+        <label for="dropdown 2">
+      </fieldset>
+      <fieldset>
+        <label>Current Tools (Select all that apply):
+          <label>
+            <input 
+            name="tools"
+            type="radio" 
+            value="excel"
+            > Spreadsheets / Excel
+          </label>
+          <label>
+            <input 
+            name="tools"
+            type="radio" 
+            value="paper"
+            > Paper / Physical Files
+          </label>
+          <label>
+            <input 
+            name="tools"
+            type="radio" 
+            value="email"
+            > Email / Messaging
+          </label>
+          <label>
+            <input 
+            name="tools"
+            type="radio" 
+            value="social"> Social Media Apps
+          </label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Project Urgency Status:</p>
+        <label>
+          <input name="urgency" type="checkbox" value="asap" checked> ASAP (Critical Bottleneck)
+        </label>
+        <label>
+          <input name="urgency" type="checkbox" value="month"> Within 30 Days (Planned)
+        </label>
+        <label>
+          <input name="urgency" type="checkbox" value="research"> Research Phase (Low Priority)
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="textarea-label">Where is the process breaking?
+          <textarea 
+          id="comments" 
+          name="bottleneck" 
+          placeholder="Describe the main time-waster...">
+          </textarea>
+        </label>
+      </fieldset>
+      <button id="submit">Initialize Audit</submit>
+    </form>
+  </body>
+</html>
