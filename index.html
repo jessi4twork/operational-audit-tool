@@ -116,26 +116,28 @@
         </label>
       </fieldset>
       <fieldset>
-        <p>Project Urgency Status:</p>
-        <label>
-          <input 
-            name="urgency" 
-            type="checkbox" 
-            value="asap" 
-            checked> ASAP (Critical Bottleneck)
-        </label>
-        <label>
-          <input 
-            name="urgency" 
-            type="checkbox" 
-            value="month"> Within 30 Days (Planned)
-        </label>
-        <label>
-          <input 
-            name="urgency" 
-            type="checkbox" 
-            value="research"> Research Phase (Low Priority)
-        </label>
+        <div class="urgency-group">
+          <p>Project Urgency Status:</p>
+          <label>
+            <input 
+              name="urgency" 
+              type="radio" 
+              value="asap" 
+              checked> ASAP (Critical Bottleneck)
+          </label>
+          <label>
+            <input 
+              name="urgency" 
+              type="radio" 
+              value="month"> Within 30 Days (Planned)
+          </label>
+          <label>
+            <input 
+              name="urgency" 
+              type="radio" 
+              value="research"> Research Phase (Low Priority)
+          </label>
+        </div>
       </fieldset>
       <fieldset>
         <label id="textarea-label">Where is the process breaking?
