@@ -63,6 +63,27 @@ input, select, textarea {
 
 #submit:hover { background: #2ea043; }
 
+.urgency-group {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  gap: 15px; 
+}
+
+.urgency-group p {
+  margin: 0;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.urgency-group label {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 400;
+  cursor: pointer;
+}
+
 @media (max-width: 480px) {
   form { padding: 1.5rem; border: none; background: transparent; }
   body { background-color: #ffffff; } 
