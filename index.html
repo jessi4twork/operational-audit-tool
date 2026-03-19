@@ -85,57 +85,33 @@
         <div></div>
       </fieldset>
       <fieldset>
-        <label>Current Tools (Select all that apply):
+        <div class="tools-group">
+          <p>Current Tools (Select all that apply):</p>
           <label>
-            <input 
-            name="tools"
-            type="checkbox" 
-            value="excel"
-            > Spreadsheets / Excel
+            <input name="tools" type="checkbox" value="excel"> Spreadsheets / Excel
           </label>
           <label>
-            <input 
-            name="tools"
-            type="checkbox" 
-            value="paper"
-            > Paper / Physical Files
+            <input name="tools" type="checkbox" value="paper"> Paper / Physical Files
           </label>
           <label>
-            <input 
-            name="tools"
-            type="checkbox" 
-            value="email"
-            > Email / Messaging
+            <input name="tools" type="checkbox" value="email"> Email / Messaging
           </label>
           <label>
-            <input 
-            name="tools"
-            type="checkbox" 
-            value="social"> Social Media Apps
+            <input name="tools" type="checkbox" value="social"> Social Media Apps
           </label>
-        </label>
+        </div>
       </fieldset>
       <fieldset>
         <div class="urgency-group">
           <p>Project Urgency Status:</p>
           <label>
-            <input 
-              name="urgency" 
-              type="radio" 
-              value="asap" 
-              checked> ASAP (Critical Bottleneck)
+            <input name="urgency" type="radio" value="asap" checked> ASAP (Critical Bottleneck)
           </label>
           <label>
-            <input 
-              name="urgency" 
-              type="radio" 
-              value="month"> Within 30 Days (Planned)
+            <input name="urgency" type="radio" value="planned" > Within 30 Days (Planned)
           </label>
           <label>
-            <input 
-              name="urgency" 
-              type="radio" 
-              value="research"> Research Phase (Low Priority)
+            <input name="urgency" type="radio" value="low" > Research Phase (Low Priority)
           </label>
         </div>
       </fieldset>
